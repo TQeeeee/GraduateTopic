@@ -1,0 +1,169 @@
+body {
+	margin: 0px;
+	background: url("../images/home/bodybg.jpg") no-repeat center;
+	background-size: 100%;
+	font-family: "Microsoft Yahei";
+	font-weight: bold;
+}
+.outer {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.frame {
+	width: 800px;
+	height: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.win-top {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100px;
+	margin-top: 40px;
+	padding-left: 80px;
+	padding-top: 55px;
+	text-align: left;
+	font-family: "Microsoft Yahei";
+	font-weight: bold;
+	font-size: 24px;
+	background: url("../images/home/win_top.jpg");
+	background-size: 100% 100%;
+}
+.win-title {
+	box-sizing: border-box;
+	width: 100%;
+	height: 60px;
+	background: url("../images/home/win_title.jpg") repeat;
+	background-size: 100% 100%;
+	padding-left: 80px;
+	padding-top: 16px;
+	text-align: left;
+	font-family: "Microsoft Yahei";
+	font-weight: bold;
+	font-size: 20px;
+	color: #fff;
+}
+.win-mid {
+	box-sizing: border-box;
+	width: 100%;
+	height: 240px;;
+	padding-left: 100px;
+	padding-top: 55px;
+	text-align: left;
+	font-family: "Microsoft Yahei";
+	font-weight: bold;
+	font-size: 16px;
+	background: url("../images/home/win_mid.jpg") repeat;
+	background-size: 100% 100%;
+}
+
+.frameform {
+	width: 400px;
+	height: 180px;
+	margin-top: -24px;
+	padding-top: 4px;
+	background-color:#EEEEE0;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+}
+
+table {
+	font-family: "Microsoft Yahei";
+	font-weight: bold;
+	font-size: 14px;
+	width: 280px;
+}
+
+.input_lab {
+	width: 80px;
+	height: 30px;
+	text-align: right;
+}
+
+.table-caption {
+	font-family: "Microsoft Yahei";
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	height: 30px;
+}
+
+.btn {
+	font-family: "Microsoft Yahei";
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	height: 45px;
+}
+
+input {
+	width: 200px;
+	height: 30px;
+	padding-left: 25px;
+	background-color: transparent;
+	border: 1px solid #FFF;
+	border-radius: 5px;
+	outline: none;
+	color: #000;
+}
+
+#username {
+	background: url("../images/home/user.png") no-repeat 5px center;
+	background-size: 14px;
+}
+
+#password {
+	background: url("../images/home/lock.png") no-repeat 5px center;
+	background-size: 14px;
+}
+
+#oldPassword{
+	background: url("../images/home/lock.png") no-repeat 5px center;
+	background-size: 14px;
+}
+#newPassword {
+	background: url("../images/home/lock.png") no-repeat 5px center;
+	background-size: 14px;
+}
+#newPasswordCheck {
+	background: url("../images/home/lock.png") no-repeat 5px center;
+	background-size: 14px;
+}
+
+
+.row_middle_editor {
+	height: 36px;
+	text-align: center;
+}
+
+button:hover {
+	cursor: pointer;
+	background: #3071a9;
+}
+
+button {
+	width: 60px;
+	height: 30px;
+	background: rgb(255, 165, 0);
+	color: #FFF;
+	border-radius: 5px;
+	border: none;
+}
+
+.win-footer {
+	height: 80px;
+	width: 100%;
+	padding-top: 16px;
+	text-align: center;
+	background: url("../images/home/win_foot.jpg");
+	background-size: 100% 100%;
+}
+
+.footer span {
+	font-size: 14px;
+	font-family: "Microsoft New Tai Lue";
+}

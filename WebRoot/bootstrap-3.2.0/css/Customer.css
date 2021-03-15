@@ -1,0 +1,28 @@
+﻿@grid-float-breakpoints:256px
+
+@grid-columns:16
+@grid-gutter-width:20px
+
+#wrap {
+  .make-row();
+}
+
+#header {
+  .make-column(3);
+}
+
+#inner {
+ .make-column(13);
+}
+
+.content-sidebar-wrap {
+ .make-row();
+}
+
+#content {
+ .make-column(12);
+}
+
+#sidebar {
+ .make-column(4);
+}

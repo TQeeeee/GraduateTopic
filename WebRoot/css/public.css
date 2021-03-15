@@ -1,0 +1,417 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+form {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	color: #2679dc;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#dc4e26;
+	text-decoration: none;
+}
+
+a:active {
+	color:#2679dc;
+	text-decoration: none;	
+}
+
+.green {
+	color: #69aa46 !important;
+}
+
+.blue {
+	color: #478fca !important;
+}
+
+.light-red {
+	color: #f77 !important;
+}
+
+.orange
+{
+	color: orange!important;
+}
+
+.hidden{
+	display: none;
+}
+
+#main_right {
+	width: auto;
+	height: 100%;
+	background: #fff;
+	padding: 0px;
+	margin-right: 16px;
+	margin-left: 240px;
+	margin-top: 0px;
+}
+
+#content_right {
+	height: 764px;
+	margin: 0px;
+	padding: 0px 2px 2px 2px;
+}
+
+.framespace {
+	height: 100%;
+	width: 100%;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.nav_bar {
+	height: 36px;
+	line-height: 36px;
+	width: 400px;
+	margin: 0px;
+	padding: 0px 0px 0px 40px;
+	text-align: left;
+	color: #fff;
+	font-weight: blod;
+	font-family: 微软雅黑, 宋体;
+	background-image: url(../images/content/nav_bar.png);
+	background-size: 100% 100%;
+	font-size: 22px;
+}
+
+.navigation {
+	border-bottom: 1px solid #428bca;
+}
+
+.editor-panel {
+	width: 100%;
+	min-width: 1048px;
+	min-height: 768px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 8px 0px 8px;
+	text-align: center;
+	background: #fff;
+	border-top: 1px solid #428bca;
+}
+
+.statistic-panel {
+	width: 100%;
+	min-width: 1048px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 8px 0px 8px;
+	text-align: center;
+	background: #fff;
+	min-height: 512px;
+}
+
+.table-center-block {
+	width: 760px;
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background: #fff;
+}
+
+.center-block-480 {
+	width: 480;
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background: #fff;
+}
+
+.center-block-320 {
+	width: 320;
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background: #fff;
+}
+
+.row_space_editor {
+	width: 100%;
+	height: 24px;
+	background: #fff;
+}
+
+.table-caption {
+	margin-top: 8px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.row_line_editor {
+	width: 100%;
+	height: 32px;
+	background: #fff;
+}
+
+.hr_8 {
+	padding: 0px;
+	margin: 0px;
+}
+
+.row_middle_editor {
+	width: 100%;
+	height: 16px;
+	background: #fff;
+	padding: 8px 0px 8px 0px;
+	font-size: 16px;
+}
+
+.col_label {
+	width: 100px;
+	min-width:60px;
+	height: 32px;
+	text-align: right;
+	background: #fff;
+}
+
+.col_input {
+	width: 80px;
+	text-align: left;
+	background: #fff;
+}
+.col_input_120 {
+	width: 120px;
+	text-align: left;
+	background: #fff;
+}
+.col_input_240 {
+	width: 240px;
+	text-align: left;
+	background: #fff;
+}
+.col_input_360 {
+	width: 360px;
+	text-align: left;
+	background: #fff;
+}
+
+.input {
+	width: 180px;
+}
+
+.input_60 {
+	width: 60px;
+}
+.width_100 {
+	width: 100px;
+	min-width:100px;
+}
+
+.width_120 {
+	width: 120px;
+	min-width:120px;
+}
+
+.input_110 {
+	width: 110px;
+}
+
+.input_340 {
+	width: 340px;
+}
+
+.input_time {
+	width: 125px;
+}
+
+.input_linage {
+	width: 40px;
+}
+
+.col-button {
+	text-align: center;
+}
+
+.btn:focus .btn:active:focus .btn.active:focus .btn.focus .btn:active.focus .btn.active.focus
+	{
+	outline: none;
+}
+
+.img-tuner {
+	width: 24px;
+	height: 24px;
+	border: none;
+	float: left;
+}
+
+.table-center-block-rows {
+	width: 100%;
+	text-align: left;
+	background: #fff;
+}
+
+.label-sm {
+	font-size: 12px;
+}
+
+.label-lg {
+	font-size: 18px;
+}
+
+/* 半透明的遮罩层 */
+#overlay {
+	background: #000;
+	filter: alpha(opacity =                       50); /* IE的透明度 */
+	opacity: 0.5; /* 透明度 */
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 100; /* 此处的图层要大于页面 */
+	display: none;
+}
+
+.progressbar {
+	text-align: center;
+	position: absolute;
+	top: 100px;
+	z-index: 101;
+	left: 40%; /* 此处的图层要大于页面 */
+}
+
+.detail-tr {
+	height: 35px;
+	border: solid 1px;
+}
+
+.detail-td-caption {
+	text-align: right;
+	width: 160px;
+	font-weight: bold;
+	padding-right: 4px;
+}
+
+.detail-td-text {
+	text-align: left;
+	width: 440px;
+	padding-left: 4px;
+}
+
+.bigger-130 {
+	font-size: 130%
+}
+
+.green {
+	color: #69aa46 !important
+}
+
+.font-color {
+	color: red;
+}
+
+.blue {
+	color: #478fca !important
+}
+
+.light-red {
+	color: #f77 !important
+}
+
+.detail-td-image {
+	text-align: center;
+	width: 380px;
+	font-weight: bold;
+}
+
+.detail-phone {
+	width: 150px;
+	height: 207px;
+}
+
+table.border {
+	border-collapse: collapse;
+	border: 1px solid #9CF;
+	text-align: center;
+	font-size: 12px;
+}
+
+table.border thead td,table.set_border th {
+	font-weight: bold;
+	background-color: White;
+}
+
+table.border tr:nth-child(even) {
+	background-color: #EAF2D3;
+}
+
+table.border td,table.border th {
+	border: 1px solid #C3C3C3;
+}
+
+.table_all {
+	width: 100%;
+}
+
+.back_gray {
+	background-color: #F2F2F2;
+}
+
+.col_caption {
+	font-size: 16px;
+	color: blue;
+	font-weight: bold;
+}
+
+.hotel-dialog-width {
+	width: 500px;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.width-480 {
+	max-width: 480px;
+}
+
+.width-520 {
+	max-width: 520px;
+}
+
+.width-all {
+	width: 100%;
+}
+
+.align-center {
+	text-align: center;
+}
+.bottom_line
+{
+border-bottom:1px solid #BBB;	
+}
+.webgis{
+	width:100%;
+	min-width:800px;
+	height:100%;
+	min-height:708px;
+}
+.tools-bar{
+	width:100%;
+	padding-left:8px;
+	height:48px;
+	line-height:48px;
+	border-bottom:1px solid #BBB;
+}

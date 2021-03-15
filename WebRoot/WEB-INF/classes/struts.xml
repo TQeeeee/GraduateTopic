@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd" >
+<struts>
+	
+	  <constant name="struts.custom.i18n.resources" value="globalMessages_zh_CN"/>
+    <constant name="struts.i18n.encoding" value="UTF-8" /> 
+	 
+	<package name="myPackage" extends="struts-default">
+		<action name="*Loading" class="com.topic.action.loading_action"
+			method="{1}">
+			<result name="loginsuccess">/index.jsp</result>
+			<result name="loginerror">/login.jsp</result>			
+			<result name="logout">/login.jsp</result>			
+			<result name="uppass">/uppass.jsp</result>	
+			<result name="timeout">/timeout.jsp</result>
+			<result name="role_manage">/role_manage.jsp</result>																
+			<result name="user_manage">/user_manage.jsp</result>																
+			<result name="role_privs">/role_privs.jsp</result>
+			<result name="user_privs">/user_privs.jsp</result>
+			<result name="user_import">/user_import.jsp</result>
+			<result name="task_manage">/task_manager.jsp</result>
+			<result name="student_topic_list">/student_topic_list.jsp</result>
+			<result name="teacher_topic_list">/teacher_topic_list.jsp</result>
+			<result name="teacher_choice_list">/teacher_choice_list.jsp</result>
+			<result name="student_choice_list">/student_choice_list.jsp</result>
+			<result name="confirm_list">/confirm_list.jsp</result>
+			<result name="topic_allocating_list">/topic_allocating_list.jsp</result>
+			<result name="topic_result_list">/topic_result_list.jsp</result>
+			<result name="topic_review_list">/topic_review_list.jsp</result>
+			<result name="report_result_list">/report_result_list.jsp</result>
+			<result name="report_submit_list">/report_submit_list.jsp</result>
+			<result name="report_review_list">/report_review_list.jsp</result>
+			<result name="report_allocating_list">/report_allocating_list.jsp</result>
+			<result name="topic_import">/topic_import_list.jsp</result>
+		</action>
+	</package>
+	<package name="simpleton" extends="struts-default,json-default">
+		<action name="*InitAction" method="{1}"
+			class="com.topic.action.init_data_action">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+			<result name="timeout">/timeout.jsp</result>											
+		</action>
+		<action name="*SettingsAction" method="{1}"
+			class="com.topic.action.system_settings">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+			<result name="timeout">/timeout.jsp</result>											
+		</action>
+		<action name="*ReportAction" method="{1}"
+			class="com.topic.action.report_manage">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+			<result name="timeout">/timeout.jsp</result>											
+		</action>
+		<action name="*TopicAction" method="{1}"
+			class="com.topic.action.topic_manage">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+			<result name="timeout">/timeout.jsp</result>											
+		</action>
+	</package>
+    <!-- 上传excel文件start -->
+	<package name="default_title" extends="struts-default,json-default" namespace="/"> 
+		<!--上传选题excel文件action start-->
+		<action class="com.topic.action.excel_analysis" name="*ExcelAnalysis" method="{1}">
+			<!-- 配置fileUpload的拦截器 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 允许上传的文件类型 -->
+				<param name="allowedTypes">application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</param>
+				<param name="maximumSize">2048576</param>
+			</interceptor-ref>
+			<!-- 配置系统默认的拦截器 -->
+			<interceptor-ref name="defaultStack"> </interceptor-ref>
+			<!-- 动态设置action的属性值 -->
+				<result type="json">
+				<param name="root">result</param>
+				</result>
+				<result name="timeout">/timeout.jsp</result>
+		</action>
+		<!--上传excel文件action end-->
+    </package>
+	<!--教师选题导入 end  -->
+
+   
+    	<!-- 设置上传文件的最大大小  必须大于等于maximumSize  -->
+		<constant name="struts.multipart.maxSize" value="2097152000"/>
+	<package name="default"    extends="struts-default" >
+		<action name="fileupload" class="com.topic.action.FileUploadAction" method="execute">
+			<interceptor-ref name="fileUpload">
+			<!-- 设置上传单个文件大小 -->
+				<param name="maximumSize">209715200</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"/>
+			<result name="timeout">/timeout.jsp</result>
+			 <result name="success">/report_submit_list.jsp</result> 
+            <result name="input">/error.jsp</result>
+		</action>
+		<action name="streamDownload" class="com.topic.action.DownloadAction" method="execute">
+    		<result type="stream">
+    			<param name="inputName">inputStream</param>
+    			 <!--默认为inline（在线打开）,设置为attachment将会告诉浏览器下载该文件,filename指定下载文件时的文件名,若未指定将会以浏览器
+                                                页面名作为文件名,streamDownload作为文件名, 指定文件名filename=${fileName}   -->
+    			<param name="contentDisposition">attachment</param>
+    		</result>
+    	</action>
+	</package>
+	
+	
+    
+    
+</struts>

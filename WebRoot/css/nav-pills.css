@@ -1,0 +1,35 @@
+ #main-right {
+ 	width: auto;
+ 	height: 100%;
+ 	padding: 0px;
+ 	margin-right: 0px;
+ 	margin-left: 240px;
+ 	margin-top: 0px;
+ }
+
+ #nav-bar{
+ 	background-color: #F8F8FF;
+ 	height: 42px;
+ 	width: auto;
+ 	border-bottom: solid 1px #B0C4DE;
+ 	display: none; 
+ 	flex-flow: row; 	
+ 	flex-wrap: nowrap;
+ 	overflow:auto;
+ }
+
+ .nav-tabs{
+ 	background-color: #F8F8FF;
+ 	height: 42px;
+ }
+
+ .btn-close{
+ 	font-size: 14px;
+ 	border:none;
+ 	background-color: transparent!important;
+ }
+
+ .scrollbar{
+ 	width: 48px!important;
+ 	min-width: 48px!important;
+ }

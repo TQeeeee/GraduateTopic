@@ -1,0 +1,183 @@
+header{
+	height: 48px;
+	line-height: 48px;
+	padding-left: 8px!important;
+	padding-right: 32px!important;
+	background-color:#E6E6FA;
+	border-bottom:solid 1px gray;
+	margin: 0px;
+}
+/*用户信息*/
+.userinfo{
+	float: right;
+}
+/*
+应用系统标题
+*/
+.app-title{
+	float: left;
+	font-family: "微软雅黑","黑体";
+	font-size: 20px;
+	letter-spacing: 1px;
+	color:orange;
+}
+/*公司名称*/
+.company{
+	float: left;
+	font-family: "隶书";
+	font-size: 32px;
+	color: #4B0082;
+	text-shadow: 1px 1px 1px gray;
+}
+/*广告轮播*/
+#slider{
+	width: 100%;
+	height: 139px;
+	min-height: 139px;
+	background-image: url(../images/homepage/header.jpg);
+	background-size: 100% 100%;
+	display: block;
+	z-index: -1;
+}
+/*中间工作区域*/
+#content{
+	height:800px!important;
+	padding-top: 2px!important;
+	padding-left: 0px!important;	
+}
+/*左边导航菜单外框区域*/
+#main-left {
+	width: 240px;
+	height: 100%;
+	background: #fff;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+}
+/*左边导航菜单内框区域*/
+#left-menu {
+	height: 100%;
+	margin-left: 4px ;
+	margin-right: 0px ;
+	margin-top: 0px;
+	padding: 4px!important;
+	text-align: left;
+	font-family: 微软雅黑;
+	font-size: 14px;
+	color: white;
+	display: flex; /*设置该div为一个弹性盒容器*/
+	flex-flow: column; /*子元素按横轴方向顺序排列*/
+}
+/*导航菜单*/
+.accordion {
+	width: 100%;
+	padding-left: 0px;
+}
+/*导航菜单链接*/
+.accordion .link {
+	cursor: pointer;
+	display: block;
+	padding: 15px 15px 12px 28px;
+	color: #4D4D4D;
+	font-size: 14px;
+	font-weight: 700;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+/*最后一个一级菜单不要下划线*/
+.accordion li:last-child .link { 
+	text-decoration: none;	
+}
+.accordion li i {
+	position: absolute;
+	top: 16px;
+	left: 6px;
+	font-size: 18px;
+	color: #595959;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.accordion li i.glyphicon-chevron-down{
+	right: 12px;
+	left: auto;
+	font-size: 16px;
+}
+
+.accordion li.open .link {
+	color: #4D4D4D;
+}
+.accordion li.open i {
+	color: #b63b4d;
+}
+.accordion li.open i.glyphicon-chevron-down {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+/**
+ * Submenu
+ */
+ .submenu {
+ 	display: block;
+ 	background: #444359;
+ 	font-size: 14px;
+ 	width: 100%;
+ 	padding-left: 0px;
+ }
+ /*每个二级菜单底部加1条下划线*/
+ .submenu li {
+ 	border-bottom: 1px solid #4b6a5e;
+ 	cursor: pointer;
+ }
+
+ .submenu a {
+ 	display: block;
+ 	text-decoration: none;
+ 	color: #d9d9d9;
+ 	padding: 12px;
+ 	padding-left: 8px;
+ 	padding-right: 6px;
+ 	-webkit-transition: all 0.25s ease;
+ 	-o-transition: all 0.25s ease;
+ 	transition: all 0.25s ease;
+ }
+ .submenu a:hover {
+ 	background: #b63b4d;
+ 	color: #FFF;
+ }
+ 
+ .active-menu {
+ 	border-bottom: 1px solid #CCC;
+ }
+
+.framespace{
+ 	background-color: #fff;
+ 	height: 100%;
+ 	max-height: 758px;
+ 	width: 100%;
+ 	border: 0px;
+ 	padding: 0px;
+ 	margin: 0px;	
+ }
+
+#footer-page {
+ 	height: 80px;
+ 	width: 100%;
+ 	background-image: url(../images/homepage/footer.jpg);
+ 	background-size: 100% 100%;
+}
+
+#copyright_footer {
+ 	width: 100%;
+ 	font-family: 微软雅黑, 宋体;
+ 	font-size: 12pt;
+ 	text-align: center;
+ 	vertical-lign: middle;
+ 	padding-top: 16px;
+ 	color: #fff;
+ 	margin-top: 2px;
+}
